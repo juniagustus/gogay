@@ -232,8 +232,6 @@ jobs:
           message: |
             Kernel ${{ github.event.inputs.KERNEL_NAME }}-${{ steps.naming.outputs.BUILD_TIME }} is built!, took ${{ steps.build.outputs.elapsed_time }}.
 
-            Commit https://www.github.com/${{ github.event.inputs.KERNEL_REPO }}/commit/${{ steps.naming.outputs.CURRENT_COMMIT }}
-
             Url ${{ steps.upload.outputs.url }}
 
             SHA Checksum ${{ steps.pack.outputs.sha }}
